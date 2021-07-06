@@ -750,23 +750,12 @@
     <script>
         function test()
         {
-            //alert("form is not filled");
-            var a=stunam.nam.value;
-            //alert(a);
-            //alert("the nam is"+a);
+          
             var b=stunam.fp.value;
-            var c=stunam.frp.value;
+            
             var d=stunam.ei.value;
-            var e=stunam.pn.value;
-            var f=stunam.day.value;
-            var m=stunam.mon.value;
-            var y=stunam.yer.value;
-            if(a=="")
-             {
-                 alert("enter the name");
-                 stunam.nam.focus();
-                 return false;
-             }
+            
+           
              if(b=="")
              {
                  alert("enter the password");
@@ -779,49 +768,14 @@
                  stunam.fp.focus();
                  return false;
              }
-             if(c=="")
-             {
-                 alert("enter the confirm password");
-                 stunam.frp.focus();
-                 return false;
-             }
-             if(c!=b)
-             {
-                 alert("enter the same password");
-                 stunam.frp.focus();
-                 return false;
-             }
-            
-             if(e=="")
-             {
-                 alert("enter the phone no");
-                 stunam.pn.focus();
-                 return false;
-             }
-             if(isNaN(e))
-             {
-                alert("enter the phone number");
-                 stunam.pn.focus();
-                 return false;
-             }
-             if(e.length!=10)
-             {
-                alert("enter the phone number within 10 numbers");
-                 stunam.pn.focus();
-                 return false;
-             }
+             
              if(d=="")
              {
                  alert("enter the Email id");
                  stunam.ei.focus();
                  return false;
              }
-             if(e=="dd" || m=="mm" || y=="yyyy")
-             {
-                alert("please select proper date");
-                 stunam.day.focus();
-                 return false;
-             }
+             
         }
     </script>
     
@@ -1044,13 +998,8 @@
                 
                 <div class="form">
                     <form name="stunam" onsubmit="return test();">
-                    <div class="n">
-                        <font color="white" size="4">Name:</font>
-                    </div>
-                    <div class="f">
-                        <input type="text" class="n" name="nam" placeholder="Enter Name"  autofocus style="height:100%; width:100%; ">
-                    </div>
-                
+                   
+                    
                     <div class="p1">
                         <font color="white" size="4">Password:</font>
                     </div>
@@ -1061,45 +1010,7 @@
                             <input type="password" class="rps" name="fp" placeholder="Enter password"  style="height:100%; width:100%; " >
                     </div>
     
-                    <div class="pp">
-                        <font color="white" size="4">Re Password:</font>
-                    </div>
-    
-    
-                    <div class="f3">
-                        
-                            <input type="password" class="ps" name="frp" placeholder="Enter Confirm password" style="height:100%; width:100%; " >
-                        
-                    </div>
-    
-                    <div class="g">
-                        <font color="white" size="4">Gender:</font>
-                    </div>
-                
-    
-                    <div class="f2"> 
-                        <b> Male:</b>
-                    <input type="radio" class="gen" name="gender"  > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-    
-                        <b>Female:</b>
-                    <input type="radio" class="gen" name="gender"  > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                    
-                        <b> Other:</b>
-                    <input type="radio" class="gen" name="gender" >
-                    </div>
-                
-    
-                    <div class="pn">
-                        <font color="white" size="4">Phone no:</font>
-                    </div>
-                    <div class="fn">
-                        
-                            <input type="number" class="no" name="pn" placeholder="Enter phone no" autofocus  style="height:100%; width:100%; ">
-                    
-                        
-                    </div>
-    
-    
+                   
                     <div class="g">
                         <font color="white" size="4">Email Id:</font>
                     </div>
@@ -1109,90 +1020,7 @@
                     </div>
                     <br>
                     
-                    <font color="white" size="4"> &nbsp; &nbsp; Date of Birth:</font>
-                <select id="date" name="day" style=" margin-left: 3%;">
-                    <option value="dd">dd</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                </select>
-                <select id="date" name="mon">
-                    <option value="mm">mm</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                </select>
-                <select id="date" name="yer">
-                    <option value="yyyy">yyyy</option>
-                    <option>1999</option>
-                    <option>2000</option>
-                    <option>2001</option>
-                    <option>2002</option>
-                    <option>2003</option>
-                    <option>2004</option>
-                    <option>2005</option>
-                    <option>2006</option>
-                    <option>2007</option>
-                    <option>2008</option>
-                    <option>2009</option>
-                    <option>2010</option>
-                    <option>2011</option>
-                    <option>2012</option>
-                    <option>2013</option>
-                    <option>2014</option>
-                    <option>2015</option>
-                    <option>2016</option>
-                    <option>2017</option>
-                    <option>2018</option>
-                    <option>2019</option>
-                    <option>2020</option>
-                    <option>2021</option>
-                    <option>2022</option>
-                    <option>2023</option>
-                    <option>2024</option>
-                    <option>2025</option>
-                    <option>2026</option>
-                    <option>2028</option>
-                    <option>2029</option>
-                    <option>2030</option>
-                    <option>2031</option>
-                </select>
+                    
                 </br></br><br>
                     <input id="sub" type="submit" value="Submit" Style="width:12%; height:7%">
                 </form>
